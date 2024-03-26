@@ -1,3 +1,11 @@
+h1{
+    font-size: 20px;
+}
+
+h2{
+    background: skyblue;
+    font-size:20px;
+}
 li{
     display: block;
     list-style: none;
