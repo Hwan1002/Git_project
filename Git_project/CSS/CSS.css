@@ -1,0 +1,6 @@
+li{
+    display: block;
+    list-style: none;
+}
+li a{display: inline-block;}
+li p{display: inline-block;}
