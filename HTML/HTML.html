@@ -9,115 +9,127 @@
     <link rel="stylesheet" href="../JS/JS.js">
 </head>
 <body>
+    <form>
     <div class="quiz_1 quiz">
         <h1>[객관식]</h1>
         <h2>선호하는 프로그래밍 언어는 무엇입니까?</h2>
         <ul>
             <li>
-                <label for="choice_1">
-                    <input type="radio" id="javascript" name="choice">
+                <label>
+                    <input type="radio" id="choice_1" name="choice" value="Javascript">
                     <span>Javascript</span>
                 </label>
             </li>
             <li>
-                <label for="choice_2">
-                    <input type="radio" id="Python" name="choice">
+                <label>
+                    <input type="radio" id="choice_2" name="choice" value="Python">
                     <span>Python</span>
                 </label>
             </li>
             <li>
-                <label for="choice_3">
-                    <input type="radio" id="Java" name="choice">
+                <label>
+                    <input type="radio" id="choice_3" name="choice" value="Java">
                     <span>Java</span>
                 </label>
             </li>
             <li>
-                <label for="choice_4">
-                    <input type="radio" id="Rust" name="choice">
+                <label>
+                    <input type="radio" id="choice_4" name="choice" value="Rust">
                     <span>Rust</span>
                 </label>
             </li>
             <li>
-                <label for="choice_5">
-                    <input type="radio" id="C#" name="choice">
+                <label>
+                    <input type="radio" id="choice_5" name="choice" value="C#">
                     <span>C#</span>
                 </label>
             </li>
         </ul>
+    </div>
+    </form>
+    <div class="quiz_2 quiz">
         <h2>다음중 프로그래밍 언어가 아닌것은?</h2>
         <ul>
             <li>
                 <label>
-                    <input type="radio" id="Go" name="choice">
+                    <input type="radio" id="Go" name="choice" value="Go">
                     <span>Go</span>
                 </label>
             </li>
             <li>
                 <label>
-                    <input type="radio" id="Kotlin" name="choice">
+                    <input type="radio" id="Kotlin" name="choice" value="Kotlin">
                     <span>Kotlin</span>
                 </label>
             </li> 
             <li>
                 <label>
-                    <input type="radio" id="HTML" name="choice">
+                    <input type="radio" id="HTML" name="choice" value="HTML">
                     <span>HTML</span>
                 </label>
             </li> 
             <li>
                 <label>
-                    <input type="radio" id="C" name="choice">
+                    <input type="radio" id="C" name="choice" value="C">
                     <span>C</span>
                 </label>
             </li> 
             <li>
                 <label>
-                    <input type="radio" id="Javascript" name="choice">
+                    <input type="radio" id="Javascript" name="choice" value="Javascript">
                     <span>Javascript</span>
                 </label>
             </li> 
         </ul>
     </div>
-<h1>[객관식 다중선택]</h1>
-<h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
-<ul>
-    <li>
-        <label>
-            <input type="radio" id="" name="">
-            <span>디자인</span>
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="radio" id="" name="">
-            <span>기능</span>
-        </label>
-    </li>
-    <li>
-        <label>
-            <input type="radio" id="" name="">
-            <span>정보</span>
-        </label>
-    </li> 
-    <li>
-        <label>
-            <input type="radio" id="" name="">
-            <span>속도</span>
-        </label>
-    </li>  
-    <li>
-        <label>
-            <input type="radio" id="" name="">
-            <span>사용편의성</span>
-        </label>
-    </li>   
-</ul>
-<h1>[주관식]</h1>
-<h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
-<input type="text" placeholder="작성 바랍니다.">
-<h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
-<input type="text" placeholder="작성 바랍니다.">
-<h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
-<input type="text" placeholder="작성 바랍니다.">
-</body>
+    <div class="quiz_3 quiz">
+        <h1>[객관식 다중선택]</h1>
+        <h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
+        <ul>
+            <li>
+                <label>
+                    <input type="radio" id="design" name="design">
+                    <span>디자인</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" id="function" name="function">
+                    <span>기능</span>
+                </label>
+            </li>
+            <li>
+                <label>
+                    <input type="radio" id="information" name="information">
+                    <span>정보</span>
+                </label>
+            </li> 
+            <li>
+                <label>
+                    <input type="radio" id="speed" name="speed">
+                    <span>속도</span>
+                </label>
+            </li>  
+            <li>
+                <label>
+                    <input type="radio" id="comfortable" name="comfortable">
+                    <span>사용편의성</span>
+                </label>
+            </li>   
+        </ul>
+    </div>
+    <div class="quiz_3 quiz">
+        <div class="head_title">
+            <h1>[주관식]</h1>
+        </div>
+        <div class="contents">
+            <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
+                <input type="text" placeholder="작성 바랍니다.">
+            <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
+                <input type="text" placeholder="작성 바랍니다.">
+            <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
+                <input type="text" placeholder="작성 바랍니다.">
+        </div>
+    </div>
+    </body>
 </html>

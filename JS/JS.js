@@ -1,1 +1,1 @@
-const quiz_answer = document.getElementById("")
+console.log("hello world");
