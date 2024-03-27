@@ -10,14 +10,56 @@ h1{
 }
 
 h2{
-    background: black;
-    
+    background: rgb(68, 133, 238);;
     color:#fff;
     font-size:20px;
+}
+ul{
+    margin-bottom: 50px;
 }
 li{
     display: block;
     list-style: none;
+    margin:20px 0;
 }
-li a{display: inline-block;}
-li p{display: inline-block;}
+li span{font-weight:bold;}
+
+[type="radio"] {
+vertical-align: middle;
+appearance: none;
+border: max(2px, 0.1em) solid gray;
+border-radius: 50%;
+width: 1.25em;
+height: 1.25em;
+transition: border 0.5s ease-in-out;
+}
+
+[type="radio"]:checked {
+border: 0.4em solid rgb(68, 133, 238);
+}
+[type="radio"]:focus-visible {
+outline: max(2px, 0.1em) dotted rgb(68, 133, 238);
+outline-offset: max(2px, 0.1em);
+}
+[type="radio"]:hover {
+box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
+cursor: pointer;
+}
+
+[type="radio"]:hover + p {
+cursor: pointer;
+}
+
+[type="text"]{
+    width:300px;
+    height:150px;
+    font-size:15px;
+    border:0;
+    border-radius: 15px;
+    outline: none;
+    padding-left:15px;
+    background-color: cornsilk;
+    opacity: 0.7;
+}
+  
+  
