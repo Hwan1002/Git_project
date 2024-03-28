@@ -10,7 +10,7 @@ function quizAnswer2(){
 }
 function quizAnswer3(){
     debugger;
-    let answer = document.querySelector('.select3 input[type="radio"]:checked');
+    let answer = document.querySelectorAll('.select3 input[type="radio"]:checked');
     return answer;
 }
 
