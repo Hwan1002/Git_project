@@ -9,98 +9,100 @@
     
 </head>
 <body>
-    <div class="quiz_1 quiz">
-        <div class="head_title">
-            <h1>[객관식]</h1>
-            
-        </div>
-        <div class="content">
-            <div class="question">
-                <h2>선호하는 프로그래밍 언어는 무엇입니까?</h2>
-            </div>
-            <div class="select1 select">
-                <input type="radio" id="choice_1" name="answer1" value="Javascript">
-                <label for="choice_1">Javascript</label>
-                <input type="radio" id="choice_2" name="answer1" value="Javascript" checked>
-                <label for="choice_2">Python</label>
-                <input type="radio" id="choice_3" name="answer1" value="Javascript">
-                <label for="choice_3">Java</label>
-                <input type="radio" id="choice_4" name="answer1" value="Javascript">
-                <label for="choice_4">Rust</label>
-                <input type="radio" id="choice_5" name="answer1" value="Javascript">
-                <label for="choice_5">C#</label>
-            </div>
-        </div>    
-    </div>
-
-    <div class="quiz_2 quiz">
-            
-        <div class="content">
-            <div class="question">
-                <h2>다음중 프로그래밍 언어가 아닌것은?</h2>
-            </div>
-            <div class="select2 select">
-                <input type="radio" id="Go" name="answer2" value="Go">
-                <label for="Go">Go</label>
-                <input type="radio" id="Kotlin" name="answer2" value="Kotlin">
-                <label for="Kotlin">Kotlin</label>
-                <input type="radio" id="HTML" name="answer2" value="HTML"checked>
-                <label for="HTML">HTML</label>
-                <input type="radio" id="C" name="answer2" value="C">
-                <label for="C">C</label>
-                <input type="radio" id="Javascript" name="answer2" value="Javascript">
-                <label for="Javascript">Javascript</label>
-            </div>
-        </div>   
-    </div>
-    <div class="quiz_3 quiz">
-        <div class="head_title">
-            <h1>[객관식 다중선택]</h1>
-        </div>
-        <div class="content">
-            <div class="question">
-                <h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
-            </div>
-            <div class="select3 select">
-                <input type="radio" id="design" name="design" value="design" checked>
-                <label for="design">design</label>
-                <input type="radio" id="function" name="function" value="function">
-                <label for="function">function</label>
-                <input type="radio" id="information" name="information" value="information">
-                <label for="information">information</label>
-                <input type="radio" id="speed" name="speed" value="speed" checked>
-                <label for="speed">speed</label>
-                <input type="radio" id="comfortable" name="comfortable" value="comfortable">
-                <label for="comfortable">comfortable</label>
-            </div>
-        </div> 
-    </div>
-    <div class="quiz_4 quiz">
-        <div class="head_title">
-            <h1>[주관식]</h1>
-        </div>
-        <div class="content">
-            <div class="question">
-                <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
-            </div>
-            <div class="textAns">
-                <input type="text" placeholder="작성 바랍니다.">
-            </div>
-            <div class="question">
-                <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
-            </div>
-            <div class="textAns">
-                <input type="text" placeholder="작성 바랍니다.">
-            </div>
-            <div class="question">
-                <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
-            </div>
-            <div class="textAns">
-                <input type="text" placeholder="작성 바랍니다.">
-            </div>
+    <form id="form" method="POST"> 
+        <div class="quiz_1 quiz">
+            <div class="head_title">
+                <h1>[객관식]</h1>
                 
+            </div>
+            <div class="content">
+                <div class="question">
+                    <h2>선호하는 프로그래밍 언어는 무엇입니까?</h2>
+                </div>
+                <div class="select1 select">
+                    <input type="radio" id="choice_1" name="answer1" value="Javascript">
+                    <label for="choice_1">Javascript</label>
+                    <input type="radio" id="choice_2" name="answer1" value="Javascript" checked>
+                    <label for="choice_2">Python</label>
+                    <input type="radio" id="choice_3" name="answer1" value="Javascript">
+                    <label for="choice_3">Java</label>
+                    <input type="radio" id="choice_4" name="answer1" value="Javascript">
+                    <label for="choice_4">Rust</label>
+                    <input type="radio" id="choice_5" name="answer1" value="Javascript">
+                    <label for="choice_5">C#</label>
+                </div>
+            </div>    
         </div>
-    </div>
+
+        <div class="quiz_2 quiz">
+                
+            <div class="content">
+                <div class="question">
+                    <h2>다음중 프로그래밍 언어가 아닌것은?</h2>
+                </div>
+                <div class="select2 select">
+                    <input type="radio" id="Go" name="answer2" value="Go">
+                    <label for="Go">Go</label>
+                    <input type="radio" id="Kotlin" name="answer2" value="Kotlin">
+                    <label for="Kotlin">Kotlin</label>
+                    <input type="radio" id="HTML" name="answer2" value="HTML"checked>
+                    <label for="HTML">HTML</label>
+                    <input type="radio" id="C" name="answer2" value="C">
+                    <label for="C">C</label>
+                    <input type="radio" id="Javascript" name="answer2" value="Javascript">
+                    <label for="Javascript">Javascript</label>
+                </div>
+            </div>   
+        </div>
+        <div class="quiz_3 quiz">
+            <div class="head_title">
+                <h1>[객관식 다중선택]</h1>
+            </div>
+            <div class="content">
+                <div class="question">
+                    <h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
+                </div>
+                <div class="select3 select">
+                    <input type="radio" id="design" name="design" value="design" checked>
+                    <label for="design">design</label>
+                    <input type="radio" id="function" name="function" value="function">
+                    <label for="function">function</label>
+                    <input type="radio" id="information" name="information" value="information">
+                    <label for="information">information</label>
+                    <input type="radio" id="speed" name="speed" value="speed" checked>
+                    <label for="speed">speed</label>
+                    <input type="radio" id="comfortable" name="comfortable" value="comfortable">
+                    <label for="comfortable">comfortable</label>
+                </div>
+            </div> 
+        </div>
+        <div class="quiz_4 quiz">
+            <div class="head_title">
+                <h1>[주관식]</h1>
+            </div>
+            <div class="content textContents">
+                <div class="question">
+                    <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
+                </div>
+                <div class="textAns">
+                    <input type="text" name="txt" id="textAns_1" placeholder="작성 바랍니다." value="">
+                </div>
+                <div class="question">
+                    <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
+                </div>
+                <div class="textAns">
+                    <input type="text" name="txt" id="textAns_2" placeholder="작성 바랍니다." value="">
+                </div>
+                <div class="question">
+                    <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
+                </div>
+                <div class="textAns">
+                    <input type="text" name="txt" id="textAns_3" placeholder="작성 바랍니다." value="">
+                </div>
+            </div>
+        </div>
+        <input type="button" value="제출" onclick="quizAnswer4()">
+    </form>
     <script src="../JS/JS.js"></script> 
     </body>
 </html>
