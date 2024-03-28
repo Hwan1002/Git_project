@@ -15,9 +15,6 @@ h2{
     padding-left:20px;
     line-height: 140%;
 }
-ul{
-    margin-bottom: 50px;
-}
 .content .question{
     background: #5DC8CD;
     font-size:20px;
@@ -29,8 +26,6 @@ ul{
     font-size:15px;
     font-weight: bold;
 }
-
-
 [type="radio"] {
 vertical-align: middle;
 appearance: none;
@@ -52,11 +47,9 @@ outline-offset: max(2px, 0.1em);
 box-shadow: 0 0 0 max(4px, 0.2em) lightgray;
 cursor: pointer;
 }
-
 [type="radio"]:hover + p {
 cursor: pointer;
 }
-
 [type="text"]{
     width:300px;
     height:100px;
@@ -70,8 +63,11 @@ cursor: pointer;
 }
 [type="button"]{
     background: #5DC8CD;
-    border: none;
+    font-size: 15px;
+    font-weight: bold;
     color: cornsilk;
+    border-radius: 10%;
+    border: none;
     width:80px;
     height:30px;
 }
