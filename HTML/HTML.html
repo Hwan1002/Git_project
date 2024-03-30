@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>동동's 과제</title>
     <link rel="stylesheet" href="../CSS/CSS.css">
-    
 </head>
 <body>
-    <form id="form" method="POST"> 
+    <form name="frm"> 
         <div class="quiz_1 quiz">
             <div class="head_title">
                 <h1>[객관식]</h1>
@@ -21,13 +20,13 @@
                 <div class="select1 select">
                     <input type="radio" id="choice_1" name="answer1" value="Javascript">
                     <label for="choice_1">Javascript</label>
-                    <input type="radio" id="choice_2" name="answer1" value="Javascript" checked>
+                    <input type="radio" id="choice_2" name="answer1" value="Python">
                     <label for="choice_2">Python</label>
-                    <input type="radio" id="choice_3" name="answer1" value="Javascript">
+                    <input type="radio" id="choice_3" name="answer1" value="Java" >
                     <label for="choice_3">Java</label>
-                    <input type="radio" id="choice_4" name="answer1" value="Javascript">
+                    <input type="radio" id="choice_4" name="answer1" value="Rust">
                     <label for="choice_4">Rust</label>
-                    <input type="radio" id="choice_5" name="answer1" value="Javascript">
+                    <input type="radio" id="choice_5" name="answer1" value="C#">
                     <label for="choice_5">C#</label>
                 </div>
             </div>    
@@ -42,9 +41,9 @@
                 <div class="select2 select">
                     <input type="radio" id="Go" name="answer2" value="Go">
                     <label for="Go">Go</label>
-                    <input type="radio" id="Kotlin" name="answer2" value="Kotlin">
+                    <input type="radio" id="Kotlin" name="answer2" value="Kotlin" >
                     <label for="Kotlin">Kotlin</label>
-                    <input type="radio" id="HTML" name="answer2" value="HTML"checked>
+                    <input type="radio" id="HTML" name="answer2" value="HTML">
                     <label for="HTML">HTML</label>
                     <input type="radio" id="C" name="answer2" value="C">
                     <label for="C">C</label>
@@ -61,16 +60,17 @@
                 <div class="question">
                     <h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
                 </div>
+                <!--name 값이 중복 되면 다중으로 선택이 불가함 근데 JS에서 인풋값을 받아오기 애매함-->
                 <div class="select3 select">
-                    <input type="radio" id="design" name="design" value="design" checked>
+                    <input type="checkbox" id="design" name="answer3" value="design">
                     <label for="design">design</label>
-                    <input type="radio" id="function" name="function" value="function">
+                    <input type="checkbox" id="function" name="answer3" value="function">
                     <label for="function">function</label>
-                    <input type="radio" id="information" name="information" value="information">
+                    <input type="checkbox" id="information" name="answer3" value="information">
                     <label for="information">information</label>
-                    <input type="radio" id="speed" name="speed" value="speed" checked>
+                    <input type="checkbox" id="speed" name="answer3" value="speed">
                     <label for="speed">speed</label>
-                    <input type="radio" id="comfortable" name="comfortable" value="comfortable">
+                    <input type="checkbox" id="comfortable" name="answer3" value="comfortable">
                     <label for="comfortable">comfortable</label>
                 </div>
             </div> 
@@ -80,28 +80,42 @@
                 <h1>[주관식]</h1>
             </div>
             <div class="content textContents">
-                <div class="question">
-                    <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
+                <div class="textCon_1 textCon">
+                    <div class="question">
+                        <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
+                    </div>
+                    <div class="textAns">
+                        <input type="text" name="txt" id="textAns_1" placeholder="작성 바랍니다." value="">
+                    </div>
                 </div>
-                <div class="textAns">
-                    <input type="text" name="txt" id="textAns_1" placeholder="작성 바랍니다." value="">
+                <div class="textCon_2 textCon">
+                    <div class="question">
+                        <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
+                    </div>
+                    <div class="textAns">
+                        <input type="text" name="txt" id="textAns_2" placeholder="작성 바랍니다." value="">
+                    </div>
                 </div>
-                <div class="question">
-                    <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
-                </div>
-                <div class="textAns">
-                    <input type="text" name="txt" id="textAns_2" placeholder="작성 바랍니다." value="">
-                </div>
-                <div class="question">
-                    <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
-                </div>
-                <div class="textAns">
-                    <input type="text" name="txt" id="textAns_3" placeholder="작성 바랍니다." value="">
+                <div class="textCon_3 textCon">
+                    <div class="question">
+                        <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
+                    </div>
+                    <div class="textAns">
+                        <input type="text" name="txt" id="textAns_3" placeholder="작성 바랍니다." value="">
+                    </div>
                 </div>
             </div>
         </div>
-        <input type="button" value="submit" onclick="quizAnswer4()">
+        <input type="submit" id= "modalOpen" value="Submit" onclick="mainSubmit()">
+        <div id="modalContainer" class="hidden">
+            <div id="modalContent">
+                <div id="checkAns"></div>
+                <button id="modalClose">Close</button>
+            </div>
+        </div>
+        <input type="button" class="Rebtn" value="Reset" onclick="reset()">
     </form>
+    <!--javascript-->
     <script src="../JS/JS.js"></script> 
     </body>
 </html>
