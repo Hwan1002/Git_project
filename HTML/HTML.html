@@ -8,112 +8,119 @@
     <link rel="stylesheet" href="../CSS/CSS.css">
 </head>
 <body>
-    <form name="frm"> 
-        <div class="quiz_1 quiz">
-            <div class="head_title">
-                <h1>[객관식]</h1>
+    <form name="frm" action="../JS/JS.js" id="form-submit" target="modalContent">
+        <div class="quiz_form"><!--서브밋이 이뤄지면 페이지가 새로고침됌 그래서 preventdefault 를 해줘야함--> 
+            <div class="quiz_1 quiz">
+                <div class="head_title">
+                    <h1>[객관식]</h1>
+                </div>
+                <div class="content">
+                    <div class="question">
+                        <h2>선호하는 프로그래밍 언어는 무엇입니까?</h2>
+                    </div>
+                    <div class="select1 select">
+                        <input type="radio" id="choice_1" name="answer1" value="Javascript">
+                        <label for="choice_1">Javascript</label>
+                        <input type="radio" id="choice_2" name="answer1" value="Python">
+                        <label for="choice_2">Python</label>
+                        <input type="radio" id="choice_3" name="answer1" value="Java" >
+                        <label for="choice_3">Java</label>
+                        <input type="radio" id="choice_4" name="answer1" value="Rust">
+                        <label for="choice_4">Rust</label>
+                        <input type="radio" id="choice_5" name="answer1" value="C#">
+                        <label for="choice_5">C#</label>
+                    </div>
+                </div>    
             </div>
-            <div class="content">
-                <div class="question">
-                    <h2>선호하는 프로그래밍 언어는 무엇입니까?</h2>
-                </div>
-                <div class="select1 select">
-                    <input type="radio" id="choice_1" name="answer1" value="Javascript">
-                    <label for="choice_1">Javascript</label>
-                    <input type="radio" id="choice_2" name="answer1" value="Python">
-                    <label for="choice_2">Python</label>
-                    <input type="radio" id="choice_3" name="answer1" value="Java" >
-                    <label for="choice_3">Java</label>
-                    <input type="radio" id="choice_4" name="answer1" value="Rust">
-                    <label for="choice_4">Rust</label>
-                    <input type="radio" id="choice_5" name="answer1" value="C#">
-                    <label for="choice_5">C#</label>
-                </div>
-            </div>    
-        </div>
 
-        <div class="quiz_2 quiz">
-                
-            <div class="content">
-                <div class="question">
-                    <h2>다음중 프로그래밍 언어가 아닌것은?</h2>
-                </div>
-                <div class="select2 select">
-                    <input type="radio" id="Go" name="answer2" value="Go">
-                    <label for="Go">Go</label>
-                    <input type="radio" id="Kotlin" name="answer2" value="Kotlin" >
-                    <label for="Kotlin">Kotlin</label>
-                    <input type="radio" id="HTML" name="answer2" value="HTML">
-                    <label for="HTML">HTML</label>
-                    <input type="radio" id="C" name="answer2" value="C">
-                    <label for="C">C</label>
-                    <input type="radio" id="Javascript" name="answer2" value="Javascript">
-                    <label for="Javascript">Javascript</label>
-                </div>
-            </div>   
-        </div>
-        <div class="quiz_3 quiz">
-            <div class="head_title">
-                <h1>[객관식 다중선택]</h1>
-            </div>
-            <div class="content">
-                <div class="question">
-                    <h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
-                </div>
-                <!--name 값이 중복 되면 다중으로 선택이 불가함 근데 JS에서 인풋값을 받아오기 애매함-->
-                <div class="select3 select">
-                    <input type="checkbox" id="design" name="answer3" value="design">
-                    <label for="design">design</label>
-                    <input type="checkbox" id="function" name="answer3" value="function">
-                    <label for="function">function</label>
-                    <input type="checkbox" id="information" name="answer3" value="information">
-                    <label for="information">information</label>
-                    <input type="checkbox" id="speed" name="answer3" value="speed">
-                    <label for="speed">speed</label>
-                    <input type="checkbox" id="comfortable" name="answer3" value="comfortable">
-                    <label for="comfortable">comfortable</label>
-                </div>
-            </div> 
-        </div>
-        <div class="quiz_4 quiz">
-            <div class="head_title">
-                <h1>[주관식]</h1>
-            </div>
-            <div class="content textContents">
-                <div class="textCon_1 textCon">
+            <div class="quiz_2 quiz">
+                    
+                <div class="content">
                     <div class="question">
-                        <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
+                        <h2>다음중 프로그래밍 언어가 아닌것은?</h2>
                     </div>
-                    <div class="textAns">
-                        <input type="text" name="txt" id="textAns_1" placeholder="작성 바랍니다." value="">
+                    <div class="select2 select">
+                        <input type="radio" id="Go" name="answer2" value="Go">
+                        <label for="Go">Go</label>
+                        <input type="radio" id="Kotlin" name="answer2" value="Kotlin" >
+                        <label for="Kotlin">Kotlin</label>
+                        <input type="radio" id="HTML" name="answer2" value="HTML">
+                        <label for="HTML">HTML</label>
+                        <input type="radio" id="C" name="answer2" value="C">
+                        <label for="C">C</label>
+                        <input type="radio" id="Javascript" name="answer2" value="Javascript">
+                        <label for="Javascript">Javascript</label>
                     </div>
+                </div>   
+            </div>
+            <div class="quiz_3 quiz">
+                <div class="head_title">
+                    <h1>[객관식 다중선택]</h1>
                 </div>
-                <div class="textCon_2 textCon">
+                <div class="content">
                     <div class="question">
-                        <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
+                        <h2>웹사이트에서 가장 중요하게 생각하는 요소는 무엇입니까?</h2>
                     </div>
-                    <div class="textAns">
-                        <input type="text" name="txt" id="textAns_2" placeholder="작성 바랍니다." value="">
+                    <!--name 값이 중복 되면 다중으로 선택이 불가함 근데 JS에서 인풋값을 받아오기 애매함-->
+                    <div class="select3 select">
+                        <input type="checkbox" id="design" name="answer3" value="design">
+                        <label for="design">design</label>
+                        <input type="checkbox" id="function" name="answer3" value="function">
+                        <label for="function">function</label>
+                        <input type="checkbox" id="information" name="answer3" value="information">
+                        <label for="information">information</label>
+                        <input type="checkbox" id="speed" name="answer3" value="speed">
+                        <label for="speed">speed</label>
+                        <input type="checkbox" id="comfortable" name="answer3" value="comfortable">
+                        <label for="comfortable">comfortable</label>
                     </div>
+                </div> 
+            </div>
+            <div class="quiz_4 quiz">
+                <div class="head_title">
+                    <h1>[주관식]</h1>
                 </div>
-                <div class="textCon_3 textCon">
-                    <div class="question">
-                        <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
+                <div class="content textContents">
+                    <div class="textCon_1 textCon">
+                        <div class="question">
+                            <h2>웹사이트 디자인에 대한 개선점을 자유롭게 작성해주세요</h2>
+                        </div>
+                        <div class="textAns">
+                            <input type="text" name="txt" id="textAns_1" placeholder="작성 바랍니다." value="">
+                        </div>
                     </div>
-                    <div class="textAns">
-                        <input type="text" name="txt" id="textAns_3" placeholder="작성 바랍니다." value="">
+                    <div class="textCon_2 textCon">
+                        <div class="question">
+                            <h2>HTML, CSS, Javascript를 배우는데 어려움을 느끼는 부분이 있습니까?</h2>
+                        </div>
+                        <div class="textAns">
+                            <input type="text" name="txt" id="textAns_2" placeholder="작성 바랍니다." value="">
+                        </div>
+                    </div>
+                    <div class="textCon_3 textCon">
+                        <div class="question">
+                            <h2>웹개발 관련 경험이나 자격증이 있습니까?</h2>
+                        </div>
+                        <div class="textAns">
+                            <input type="text" name="txt" id="textAns_3" placeholder="작성 바랍니다." value="">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <input type="submit" id= "modalOpen" value="Submit" onclick="mainSubmit()">
-        <div id="modalContainer" class="hidden">
-            <div id="modalContent">
-                <div id="checkAns"></div>
-                <button id="modalClose">Close</button>
+        
+        <!--버튼을 따로 설정-->
+        <!-- <input type="submit" id= "modalOpen" value="Submit" onclick="mainSubmit()"> -->
+            <div class="btns">
+                <button type="submit" id="submit-button" >Submit</button>
+                <input type="button" class="Rebtn" value="Reset" onclick="reset()">
+            </div>
+            <div id="modalContainer" class="hidden">
+                <div id="modalContent">
+                    <div id="checkAns"></div>
+                    <button id="modalClose">Close</button>
+                </div>
             </div>
         </div>
-        <input type="button" class="Rebtn" value="Reset" onclick="reset()">
     </form>
     <!--javascript-->
     <script src="../JS/JS.js"></script> 
