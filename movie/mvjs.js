@@ -1,0 +1,1 @@
+const mvSearch = document.querySelectorAll("#mvTitle p");
